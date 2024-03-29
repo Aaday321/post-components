@@ -4,10 +4,10 @@ import DisplayHandle from "../display-handle/DisplayHandle.jsx";
 const UPDATE = 'update'
 const POST = 'post'
 
-export const UpdateCard = BasePostCard({type: BaseCard})
+export const UpdateCard = BasePostCard({type: UPDATE})
 export const PostCard = BasePostCard({type: POST})
-function BasePostCard({type}) {
 
+function BasePostCard({type}) {
     //types: update, post
 
 
