@@ -1,7 +1,7 @@
 import React from "react";
 import DisplayHandle from "../display-handle/DisplayHandle.jsx";
 
-const BaseCard = 'update'
+const UPDATE = 'update'
 const POST = 'post'
 
 export const UpdateCard = BasePostCard({type: BaseCard})
@@ -22,8 +22,6 @@ function BasePostCard({type}) {
             imageUrl,
         } = postDetails
 
-        console.log(postDetails)
-
         return(
             <>
                 <br/>{type}<br/>
@@ -39,7 +37,7 @@ function BasePostCard({type}) {
                 }
                 {
 
-                    type === BaseCard &&
+                    type === UPDATE &&
                     <>
                         {!postDetails.technologies?.length && <span>No technologies</span>}
 
